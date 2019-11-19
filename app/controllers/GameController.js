@@ -11,10 +11,20 @@ function _draw() {
 
 export default class GameController {
   // PUBLIC PARTS
-  
+
   mine() {
     console.log("ARE WE MINING");
     GameService.updateCount();
     _draw();
+  }
+
+  button() {
+    console.log("hola");
+    GameService.twoPointsClick();
+    _draw();
+  }
+
+  fastbutton() {
+    GameService.threePointsClick();
   }
 }
