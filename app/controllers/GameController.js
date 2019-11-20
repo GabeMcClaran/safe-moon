@@ -26,5 +26,11 @@ export default class GameController {
 
   fastbutton() {
     GameService.threePointsClick();
+    _draw();
+  }
+
+  slowauto() {
+    GameService.slowAuto();
+    _draw();
   }
 }
